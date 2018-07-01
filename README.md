@@ -5,6 +5,9 @@ Using a multilayer perceptron (MLP) trained on the MNIST database, digits are re
 This project aims to alleviate a key bottleneck of companies - manual data entry. Human-based data entry is slow, expensive, and prone to mistakes; here an MLP is used to overcome these weaknesses. 
 
 ## Features
+### Saving and loading weights
+Previously trained weights can be saved for future use, speeding up workflow by not having to retrain the model every single time. Pre-trained weights are also available straight out of the box.
+
 ### Error detection
 As the invoice contains price, quantity, and total price, the tool also has an error-checking feature. If the numbers processed do not align, the offending excel cells are highlighted in red to flag potential errors. These errors can either be the result of handwriting error, or misidentification of digits by the MLP. A human operator can then manually inspect the problematic fields and correct any potential errors.
 ### Excel interfacing
